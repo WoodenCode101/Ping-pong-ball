@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body{
+            background-color: white;
+        }
+
+        .border{
+            transform: translate(20px,40px);
+            width: 300px;
+            height: 180px;
+            border-radius: 30px;
+            background-color: rgb(224, 236, 247);
+            box-shadow: 0 0 30px -5px ;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .border:hover{
+            box-shadow: 0 0 30px -5px red ;
+        }
+
+        .plate{
+            width: 150px;
+            height: 15px;
+            background-color:red;
+            position: absolute;
+            left: 75px;
+            top: 120px;
+            border: 2px solid black;
+            border-radius: 10px;
+            animation: plate 3s infinite ease;
+        }
+
+        .plate:hover{
+            box-shadow: 0 0 25px yellow;
+        }
+
+        @keyframes plate{
+            0%{
+                background-color: red;
+                left: 0px;
+            }
+            25%{
+                background-color:hotpink;
+                left:100px;
+            }
+            50%{
+                background-color:greenyellow;
+                left: 150px;
+            }
+            75%{
+                background-color:rgb(53, 168, 221);
+                left: 0px;
+            }
+            100%{
+                background-color: red;
+                left: 0px;
+            }
+        }
+
+        .ball1{
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgb(17, 17, 17);
+            border-radius: 50%;
+            background-color: rgb(255, 0, 200);
+            position: absolute;
+            top: -24px;
+            animation: ball1 2s  linear infinite ;
+        }
+
+        .ball2{
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgb(17, 17, 17);
+            border-radius: 50%;
+            background-color: rgb(166, 224, 117);
+            position: absolute;
+            top: -2px;
+            left: 59px;
+            animation: ball2 3s  linear infinite ;
+        }
+
+        .ball3{
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgb(17, 17, 17);
+            border-radius: 50%;
+            background-color: rgb(42, 194, 174);
+            position: absolute;
+            top: -2px;
+            left: 62px;
+            animation: ball3 1s linear infinite ;
+        }
+
+        .ball:hover{
+            box-shadow: 0 0 25px yellow;
+        }
+
+        .ball2:hover{
+            box-shadow: 0 0 25px yellow;
+        }
+
+        .ball3:hover{
+            box-shadow: 0 0 25px yellow;
+        }
+
+        @keyframes ball1{
+            0%{
+                top: -22px;
+                left: 0px;
+            }
+            50%{
+                top: -125px;
+                left: 50px;
+            }
+            100%{
+                top: -20px;
+                left: 0px;
+            }
+        }
+
+        @keyframes ball2{
+            0%{
+                top: -6px;
+                left: 64px;
+            }
+            50%{
+                top: 0px;
+                left: -100px;
+            }
+            100%{
+                top: -6px;
+                left:64px;
+            }
+        }
+
+        @keyframes ball3{
+            0%{
+                top: 0px;
+                left: 58px;
+            }
+            50%{
+                top: 0px;
+                left: 190px;
+            }
+            100%{
+                top: 0px;
+                left:58px;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="border">
+        <div class="plate">
+            <div class="ball1">
+                <div class="ball2">
+                    <div class="ball3">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
